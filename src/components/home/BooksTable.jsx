@@ -4,6 +4,7 @@ import { BsInfoCircle } from "react-icons/bs";
 import { MdOutlineDelete } from "react-icons/md";
 
 const BooksTable = ({ books }) => {
+  console.log(books):
   return (
     <table className="table table-striped text-center">
       <thead>
@@ -16,7 +17,7 @@ const BooksTable = ({ books }) => {
         </tr>
       </thead>
       <tbody>
-        {books?.map((book, index) => (
+        {books?.data?.map((book, index) => (
           <tr key={book._id} className="h-8">
             <td className="border ">{index + 1}</td>
             <td className="border">{book.title}</td>
