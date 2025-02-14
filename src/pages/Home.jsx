@@ -25,7 +25,7 @@ const Home = () => {
       headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
     };
     axios
-      .get("https://books-app-server-1.onrender.com/books", config)
+      .get("https://books-app-server-1.onrender.com/user/books", config)
       .then((response) => {
         console.log("data ", response);
         setBooks(response.data);
