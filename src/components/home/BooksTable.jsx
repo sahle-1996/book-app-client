@@ -4,7 +4,7 @@ import { BsInfoCircle } from "react-icons/bs";
 import { MdOutlineDelete } from "react-icons/md";
 
 const BooksTable = ({ books }) => {
-  console.log(books):
+
   return (
     <table className="table table-striped text-center">
       <thead>
